@@ -1,0 +1,27 @@
+:root { --bg:#f4f6f8; --card:#fff; --text:#1f2933; --primary:#39a900; --muted:#6b7785; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, Arial, sans-serif; background:var(--bg); color:var(--text); }
+header { background:var(--primary); color:#fff; text-align:center; padding:1.5rem 1rem; }
+header h1 { margin:0; }
+header p { margin:.3rem 0 1rem; opacity:.9; }
+.search { display:flex; gap:.5rem; justify-content:center; flex-wrap:wrap; }
+input { padding:.6rem .8rem; border:none; border-radius:8px; min-width:240px; }
+button { padding:.6rem 1rem; border:none; border-radius:8px; background:#1f2933; color:#fff; cursor:pointer; }
+button.secondary { background:#fff; color:var(--text); border:1px solid #cbd2d9; }
+button:disabled { opacity:.4; cursor:not-allowed; }
+main { max-width:1000px; margin:1.5rem auto; padding:0 1rem; }
+#status { text-align:center; color:var(--muted); min-height:1.4rem; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:1rem; }
+.card { background:var(--card); border-radius:12px; padding:1rem; text-align:center; box-shadow:0 2px 6px #0001; cursor:pointer; transition:transform .15s; }
+.card:hover { transform:translateY(-4px); }
+.card img { width:120px; height:120px; object-fit:contain; }
+.card h3 { margin:.4rem 0; text-transform:capitalize; }
+.id { color:var(--muted); font-size:.85rem; }
+.badge { display:inline-block; padding:.15rem .6rem; margin:.15rem; border-radius:999px; background:#e4e7eb; font-size:.8rem; text-transform:capitalize; }
+.pager { display:flex; justify-content:center; align-items:center; gap:1rem; margin:1.5rem 0; }
+dialog { border:none; border-radius:14px; padding:1.5rem; max-width:420px; width:92%; }
+dialog::backdrop { background:#0008; }
+.stat { display:flex; align-items:center; gap:.5rem; font-size:.85rem; margin:.2rem 0; }
+.stat span:first-child { width:110px; text-transform:capitalize; }
+.bar { flex:1; background:#e4e7eb; border-radius:6px; height:8px; }
+.bar > div { height:8px; border-radius:6px; background:var(--primary); }

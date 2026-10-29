@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pokédex - Consumo de API de terceros</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Pokédex</h1>
+    <p>Consumo de la PokeAPI · SENA ADSO · GA2-220501096-AA2-EV03</p>
+    <div class="search">
+      <input id="searchInput" type="text" placeholder="Nombre o número (ej: pikachu, 25)" />
+      <button id="searchBtn">Buscar</button>
+      <button id="resetBtn" class="secondary">Ver lista</button>
+    </div>
+  </header>
+
+  <main>
+    <p id="status" role="status"></p>
+    <section id="grid" class="grid"></section>
+    <nav id="pager" class="pager">
+      <button id="prevBtn" class="secondary">← Anterior</button>
+      <span id="pageInfo"></span>
+      <button id="nextBtn" class="secondary">Siguiente →</button>
+    </nav>
+  </main>
+
+  <dialog id="modal"><div id="modalBody"></div><button id="closeBtn">Cerrar</button></dialog>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
